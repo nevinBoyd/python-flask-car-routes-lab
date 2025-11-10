@@ -153,3 +153,20 @@ Once all tests are passing and code is pushed to the `main` branch:
 - Application passes all test suites
 - `/` route is created and returns correctly
 - `/<model>` route is created and returns correctly
+
+---
+
+---
+
+## Developer Notes / Project Adjustments
+
+- The provided project included `app.py` inside the `server/` directory, but the test suite imports from the project root (e.g., `from app import app`).  
+  To match the test expectations, I moved `app.py` to the root of the project directory.
+
+- Updated the routes as required:
+  - `/` returns `"Welcome to Flatiron Cars"`
+  - `/<model>` checks the model against a list of existing models and returns:
+    - `"Flatiron {model} is in our fleet!"` if it exists
+    - `"No models called {model} exists in our catalog"` if it does not
+
+- All tests pass successfully.
