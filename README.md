@@ -156,8 +156,6 @@ Once all tests are passing and code is pushed to the `main` branch:
 
 ---
 
----
-
 ## Developer Notes / Project Adjustments
 
 - The provided project included `app.py` inside the `server/` directory, but the test suite imports from the project root (e.g., `from app import app`).  
