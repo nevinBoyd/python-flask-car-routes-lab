@@ -168,3 +168,4 @@ Once all tests are passing and code is pushed to the `main` branch:
     - `"No models called {model} exists in our catalog"` if it does not
 
 - All tests pass successfully.
+
